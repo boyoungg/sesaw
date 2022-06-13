@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="./img/logo.png" width="200"></a>
+            <ul>
+                <a href="#sec2"><li>OVERVIEW</li></a>
+                <a href="#sec3"><li>DESIGN</li></a>
+                <a href="#sec4"><li>CONTENTS</li></a>
+                <a href="#sec5"><li>TEAM</li></a>
+            </ul>
+        </nav>
+    </header>
+    <section id="sec1">
+        <img src="./img/sec1.png" alt="">
+        <img src="./img/appgif.gif" id="mainApp" width="350">
+        <img src="./img/sec1_1.png" id="sec_1" class="scroll scroll-up">
+    </section>
+    <section id="videoImg">
+        <p>시소는 이런 서비스!</p>
+        <video width="1280" loop muted controls>
+            <source src="./img/video.mp4" type="video/mp4">
+            <source src="./img/video.mp4" type="video/webm">
+            <source src="./img/video.mp4" type="video/ogg">
+        </video>
+        <img src="./img/ve1.png" id="vidImg1" class="scroll scroll-up">
+        <img src="./img/ve2.png" id="vidImg2" class="scroll scroll-up">
+        <img src="./img/ve3.png" id="vidImg3" class="scroll scroll-up">
+        <img src="./img/ve4.png" id="vidImg4" class="scroll scroll-up">
+    </section>
+    <section>
+        <img src="./img/sec3.png">
+        <a href="https://www.op.gg/champions/ahri/mid/build" target="_blank">
+            <div id="but1">
+                기획서 PPT
+            </div>
+        </a>
+        <a href="">
+            <div id="but2">
+                APP SERVICE
+            </div>
+        </a>
+    </section>
+    <section  id="sec2">
+        <img src="./img/sec3_1.png" alt="">
+        <img src="./img/sec3_2.png" id="sec2Img" class="scroll scroll-up">
+        <img src="./img/sec3_3.png" id="sec2Img0">
+        <img src="./img/sec3_4.png" id="sec2textImg" class="scroll scroll-up">
+        <img src="./img/sec4.png" alt="">
+        <img src="./img/sec4_1_1.png" alt="">
+        <img src="./img/Group 88.png" id="chImg1" width="500" class="scroll scroll-up">
+        <img src="./img/Group 89.png" id="chImg3" class="scroll scroll-up">
+        <img src="./img/Group 90.png" id="chImg2" class="scroll scroll-up">
+        <img src="./img/sec4_1.png" id="sec2Img1" class="scroll scroll-up">
+        <img src="./img/sec4_2.png" id="sec2Img2" class="scroll scroll-up">
+        <img src="./img/sec4_3.png" id="sec2Img3" class="scroll scroll-up">
+        <!-- <img src="./img/sec4_4.png" id="sec2Img4" class="scroll scroll-up"> -->
+    </section>
+    <section  id="sec3">
+        <img src="./img/sec5.png" alt="">
+        <img src="./img/sec5_1.png" id="sec3Img1"  class="scroll scroll-up">
+        <img src="./img/sec5_2.png" id="sec3Img2"  class="scroll scroll-up">
+        <img src="./img/Group1.png" id="sec3Img3" width="1248" class="scroll scroll-up">
+        <img src="./img/Group2.png" id="sec3Img4" width="1248" class="scroll scroll-up">
+        <img src="./img/Group3.png" id="sec3Img5" width="1248" class="scroll scroll-up">
+        <img src="./img/imgggg.gif" id="sec3Img6">
+    </section>
+    <section id="sec4">
+        <img src="./img/sec6.png" alt="">
+        <img src="./img/con1.png" id="conImg1" class="scroll scroll-up">
+        <img src="./img/con2.png" id="conImg2" class="scroll scroll-up">
+        <img src="./img/con3.png" id="conImg3" class="scroll scroll-up">
+        <img src="./img/con4.png" id="conImg4" class="scroll scroll-up">
+        <img src="./img/con5.png" id="conImg5" class="scroll scroll-up">
+        <img src="./img/con6.png" id="conImg6" class="scroll scroll-up">
+        <img src="./img/con7.png" id="conImg7" class="scroll scroll-up">
+        <img src="./img/con8.png" id="conImg8" class="scroll scroll-up">
+        <img src="./img/con9.png" id="conImg9" class="scroll scroll-up">
+        <img src="./img/con10.png" id="conImg10" class="scroll scroll-up">
+        <img src="./img/con11.png" id="conImg11" class="scroll scroll-up">
+
+    </section>
+    <section>
+        <img src="./img/sec7.png" alt="">
+    </section>
+    <section  id="sec5">
+        <img src="./img/sec8.png" alt="">
+    </section>
+    <footer>
+        <img src="./img/logo.png" alt="">
+        <p>
+            THANK YOU FOR WATCHING!
+        </p>
+    </footer>
+
+    <script>
+        const saTriggerMargin = 300;
+        const saElementList = document.querySelectorAll('.scroll');
+  
+        const saFunc = function() {
+          for (const element of saElementList) {
+            if (!element.classList.contains('show')) {
+              if (window.innerHeight > element.getBoundingClientRect().top + saTriggerMargin) {
+                element.classList.add('show');
+              }
+            }
+          }
+        }
+  
+        window.addEventListener('load', saFunc);
+        window.addEventListener('scroll', saFunc);
+      </script>
+</body>
+</html>

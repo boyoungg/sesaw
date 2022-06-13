@@ -1,0 +1,428 @@
+/* css 초기화 코드 , 구글링 복붙했습니다. */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* font-face link */
+
+@font-face {
+    font-family: 'TmoneyRoundWindRegular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SuncheonB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/SuncheonB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* nav css */
+/* .wrap{
+    margin: 0 auto;
+    width: 1440px;
+    height: 3000px;
+} */
+
+body{
+    overflow-x: hidden;
+    height: 3000px;
+    font-family: 'TmoneyRoundWindRegular';
+}
+
+header{
+    height: 70px;
+    margin: 0 auto;
+    width: 1440px;
+}
+
+header nav{
+    width: 1440px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 50px;
+    background-color: #ff7949;
+    font-family: 'TmoneyRoundWindRegular';
+    color: white;
+    position: fixed;
+    z-index: 999;
+}
+
+header nav ul li:hover{
+    color: rgb(66, 66, 66);
+}
+
+header nav img{
+    padding: 10px 70px;
+}
+
+header nav ul{
+    width: 50%;
+    float: right;
+    text-align: right;
+    margin: 18px 70px 10px 10px;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding-left: 50px;
+}
+
+a{
+    color: white;
+}
+
+section{
+    position: relative;
+    top: -70px;
+}
+
+#mainApp{
+    position: absolute;
+    top: 500px;
+    left: 770px;
+}
+
+#sec_1{
+    position: absolute;
+    top: 1317px;
+    left: 512px;
+}
+
+#sec2Img{
+    position: absolute;
+    top: 1072px;
+    left: 190px;
+}
+
+#sec2Img0{
+    position: absolute;
+    top: 1864px;
+    right: 178px;
+}
+
+#sec2textImg{
+    position: absolute;
+    top: 1929px;
+    right: 280px;
+}
+
+#sec2Img1{
+    position: absolute;
+    top: 685px;
+    left: 273px;
+}
+
+#sec2Img2{
+    position: absolute;
+    top: 685px;
+    left: 763px;
+}
+
+#sec2Img3{
+    position: absolute;
+    top: 685px;
+    left: 1279px;
+}
+
+#sec2Img4{
+    position: absolute;
+    top: 4420px;
+    left: 182px;
+}
+
+#sec3Img1{
+    position: absolute;
+    top: 232px;
+    left: 232px;
+}
+
+#sec3Img2{
+    position: absolute;
+    top: 470px;
+    left: 439px;
+}
+
+#sec3Img3{
+    position: absolute;
+    top: 2178px;
+    left: 367px;
+}
+
+#sec3Img4{
+    position: absolute;
+    top: 2450.89px;
+    left: 367px;
+}
+
+#sec3Img5{
+    position: absolute;
+    top: 2718.44px;
+    left: 367px;
+}
+
+#sec3Img6{
+    position: absolute;
+    top: 5044px;
+    left: 178px;
+}
+
+#conImg1{
+    position: absolute;
+    top: 264px;
+    left: 178px;
+}
+
+#conImg2{
+    position: absolute;
+    top: 1394px;
+    left: 1128px;
+}
+
+#conImg3{
+    position: absolute;
+    top: 1819px;
+    left: 558px;
+}
+
+#conImg4{
+    position: absolute;
+    top: 2594px;
+    right: 1128px;
+}
+
+#conImg5{
+    position: absolute;
+    top: 3361px;
+    left: 690px;
+}
+
+#conImg6{
+    position: absolute;
+    top: 3767px;
+    left: 889px;
+}
+
+#conImg7{
+    position: absolute;
+    top: 4047px;
+    left: 503px;
+}
+
+#conImg8{
+    position: absolute;
+    top: 5034px;
+    right: 1031px;
+}
+
+#conImg9{
+    position: absolute;
+    top: 6320px;
+    left: 181px;
+}
+
+#conImg10{
+    position: absolute;
+    top: 6755px;
+    left: 970px;
+}
+
+#conImg11{
+    position: absolute;
+    top: 7143px;
+    left: 585px;
+}
+
+#chImg1{
+    position: absolute;
+    top: 3565px;
+    left: 178px;
+}
+
+#chImg2{
+    position: absolute;
+    top: 3796px;
+    left: 74px;
+}
+
+#chImg3{
+    position: absolute;
+    top: 3620px;
+    left: 1211px;
+}
+
+
+#videoImg{
+    width: 100%;
+    height: 950px;
+    margin-top: 0px;
+}
+
+#videoImg p{
+    color: #ff7949;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 20px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#videoImg video{
+    margin: 20px 0 0 331px;
+    border: solid 3px #ff7949;
+    z-index: 999;
+}
+
+#vidImg1{
+    position: absolute;
+    top: -120px;
+    left: 10px;
+    z-index: -99;
+}
+
+#vidImg2{
+    position: absolute;
+    top: -120px;
+    right: 0;
+    z-index: -99;
+}
+
+#vidImg3{
+    position: absolute;
+    top: -120px;
+    left: 10px;
+    z-index: -99;
+}
+
+#vidImg4{
+    position: absolute;
+    top: -120px;
+    right: 0;
+    z-index: -99;
+}
+
+#but1{
+    width: 150px;
+    height: 50px;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 50px;
+    position: absolute;
+    top: 632px;
+    left: 142px;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+}
+
+#but2{
+    width: 150px;
+    height: 50px;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 50px;
+    position: absolute;
+    top: 632px;
+    left: 312px;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+}
+
+#but1:hover{
+    background-color: white;
+    color: #ff7949;
+}
+
+#but2:hover{
+    background-color: white;
+    color: #ff7949;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/footer.png);
+}
+
+footer img{
+    padding: 35px 0 0 250px;
+}
+
+footer p{
+    width: 800px;
+    height: 50px;
+    float: right;
+    margin: 25px 250px 0 0;
+    color: white;
+    text-align: right;
+    padding-top: 18px;
+
+}
+
+.scroll {
+    opacity: 0;
+    transition: all .5s ease;
+  }
+
+  /* 아래에서 위로 페이드 인 */
+  .scroll-up {
+    transform: translate(0, 50px);
+  }
+
+  .scroll.show {
+    opacity: 1;
+    transform: none;
+  }
